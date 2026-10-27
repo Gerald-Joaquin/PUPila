@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Gold angular notch — landing top strip */
+  .notch {
+    clip-path: polygon(0 0, 100% 0, 94% 100%, 0 100%);
+  }
+
+  /* Photo card — collage images */
+  .photo {
+    background: linear-gradient(135deg, #e5d9d9, #c9b3b3);
+    border: 5px solid #fff;
+    box-shadow: 0 24px 48px -16px rgba(80, 0, 0, 0.5);
+  }
+  .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s;
+  }
+  .photo:hover img {
+    transform: scale(1.06);
+  }
+
+  /* Glassmorphism chip */
+  .glass {
+    background: rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+  }
+}
+
+@layer utilities {
+  /* Enroll button hover */
+  .enroll-btn:hover {
+    background: #6E0A0E !important;
+  }
+
+  /* Floating animation for crest badge */
+  @keyframes fl {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(-8px); }
+  }
+  .fl {
+    animation: fl 5s ease-in-out infinite;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .fl { animation: none; }
+  }
+}
+
+@layer base {
+  :root {
+    --crimson:       #9B1B1B;
+    --crimson-dark:  #7a1515;
+    --crimson-light: #fdf2f2;
+    --surface:       #F5F6FA;
+    --border:        #e5e7eb;
+    --bg:      #f3eee6;
+    --card:    #fbf7ef;
+    --ink:     #1f2937;
+    --muted:   #6b7280;
+    --field:   #fffdf8;
+    --line:    #e6dcc8;
+    --link:    #8b1414;
+    --ease:    cubic-bezier(.65, 0, .35, 1);
+  }
+
+  html {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Thin, refined scrollbar */
+  ::-webkit-scrollbar         { width: 5px; height: 5px; }
+  ::-webkit-scrollbar-track   { background: transparent; }
+  ::-webkit-scrollbar-thumb   { background: #d1d5db; border-radius: 9999px; }
+  ::-webkit-scrollbar-thumb:hover { background: #9ca3af; }
+}
+
+@layer utilities {
+  /* Opacity shorthand for bg that Tailwind doesn't ship by default */
+  .bg-crimson  { background-color: var(--crimson); }
+  .text-crimson { color: var(--crimson); }
+}
+
+/* Auth card appearance and responsive layout. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:    #1a0c0c;
+    --card:  #2a1414;
+    --ink:   #f6ece0;
+    --muted: #b9a89a;
+    --field: #351b1b;
+    --line:  #4a2a2a;
+    --link:  #f5b000;
+  }
+
+  .dark-shell {
+    background: linear-gradient(160deg, var(--card) 50%, #4a3a10 150%) !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .auth-pane-up,
+  .auth-pane-in,
+  .auth-panel,
+  .auth-copy {
+    transition-duration: .01s !important;
+    transition-delay: 0s !important;
+  }
+}
+
+@media (max-width: 820px) {
+  .dark-shell {
+    min-height: 0 !important;
+  }
+  .auth-panel {
+    display: none !important;
+  }
+  .auth-pane-up,
+  .auth-pane-in {
+    position: static !important;
+    width: auto !important;
+    padding: 20px 18px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transition: none !important;
+  }
+  .auth-pane-hidden {
+    display: none !important;
+  }
+}

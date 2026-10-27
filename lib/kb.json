@@ -1,0 +1,77 @@
+[
+  {
+    "id": "enrollment_overview",
+    "title": "Enrollment Overview",
+    "type": "info",
+    "keywords": ["enrollment", "process", "steps", "start", "how", "begin", "register"],
+    "content": "To enroll, go to the Enrollment page and fill in your details. Select your student type (Regular or Irregular). Regular students are auto-assigned their prescribed subjects and confirmed immediately. Irregular students choose their subjects and wait for staff approval. Once submitted, you will receive an Enrollment Number (ENR) to track your status."
+  },
+  {
+    "id": "regular_student",
+    "title": "Regular Student Enrollment",
+    "type": "info",
+    "keywords": ["regular", "prescribed", "curriculum", "auto", "assigned", "automatic", "confirmed"],
+    "content": "A Regular student follows the prescribed curriculum for their year level and program. When you submit the enrollment form as a Regular student, your subjects are automatically assigned based on your year level. Your enrollment is confirmed immediately — no approval is needed. You will see your ENR number and assigned subjects on the success screen."
+  },
+  {
+    "id": "irregular_student",
+    "title": "Irregular Student Enrollment",
+    "type": "info",
+    "keywords": ["irregular", "back subject", "custom", "pick", "choose", "pending", "approval", "shifted"],
+    "content": "An Irregular student has back subjects, has shifted programs, or carries a custom subject load. When you enroll as Irregular, you manually select subjects from the available pool. Your enrollment is submitted with a Pending status and must be reviewed and confirmed by a staff member before it is official."
+  },
+  {
+    "id": "subject_selection",
+    "title": "Choosing Subjects",
+    "type": "checklist",
+    "keywords": ["subjects", "available", "units", "load", "select", "pick subjects", "how many", "which"],
+    "content": "Irregular students may select from the following available subjects:",
+    "items": [
+      "IT101 — Introduction to Computing (3 units, 1st Year)",
+      "IT102 — Computer Programming 1 (3 units, 1st Year)",
+      "IT103 — Mathematics in the Modern World (3 units, 1st Year)",
+      "IT201 — Data Structures and Algorithms (3 units, 2nd Year)",
+      "IT202 — Object-Oriented Programming (3 units, 2nd Year)",
+      "IT203 — Database Management Systems (3 units, 2nd Year)",
+      "IT301 — Web Systems and Technologies (3 units, 3rd Year)",
+      "IT302 — Networks and Communications (3 units, 3rd Year)",
+      "IT401 — Capstone Project 1 (3 units, 4th Year)",
+      "IT402 — Software Engineering (3 units, 4th Year)"
+    ]
+  },
+  {
+    "id": "approval_process",
+    "title": "Approval Process",
+    "type": "info",
+    "keywords": ["approve", "approval", "pending", "confirm", "wait", "review", "staff", "rejected", "reject"],
+    "content": "Irregular enrollments require staff review. After you submit, your enrollment status will show as Pending. A staff member will review your subject selection and either Confirm or Reject your enrollment. You can check your current status anytime using your ENR number on the Track page. Regular enrollments are auto-confirmed and do not go through this process."
+  },
+  {
+    "id": "enrollment_status",
+    "title": "Tracking Your Enrollment",
+    "type": "info",
+    "keywords": ["track", "status", "check", "number", "enr", "where", "find", "lookup", "monitoring", "enrollment"],
+    "content": "You can track your enrollment by visiting the Track page and entering your Enrollment Number (ENR). Your ENR number is shown on the success screen after submitting. The status will show as Pending (awaiting staff review), Confirmed (enrollment is official), or Rejected (enrollment was not approved). If rejected, please contact the Registrar's Office."
+  },
+  {
+    "id": "schedule",
+    "title": "Enrollment Schedule",
+    "type": "info",
+    "keywords": ["when", "open", "deadline", "period", "dates", "schedule", "close", "last day", "until"],
+    "content": "The current enrollment period is for Academic Year 2025–2026, 1st Semester. Please complete your enrollment before the deadline set by the Registrar's Office. Check the official college bulletin board or contact the Registrar for the exact open and closing dates of the enrollment period."
+  },
+  {
+    "id": "requirements",
+    "title": "Requirements",
+    "type": "checklist",
+    "keywords": ["require", "requirements", "document", "bring", "prepare", "documents"],
+    "content": "Before enrolling, prepare the following:",
+    "items": [
+      "Valid Student ID or any government-issued ID",
+      "Your Student ID number (found on your school records)",
+      "Your year level and program (BSIT)",
+      "For Irregular students: a list of the subjects you intend to enroll in",
+      "Certificate of Registration (COR) from the previous semester (if available)"
+    ]
+  }
+]
